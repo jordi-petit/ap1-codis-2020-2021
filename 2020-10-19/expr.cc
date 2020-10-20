@@ -28,8 +28,8 @@ int avaluar()
         return caracter_a_enter(c);
     } else {
         assert(c == '+' or c == '-' or c == '*');
-        op1 = avaluar();
-        op2 = avaluar();
+        int op1 = avaluar();
+        int op2 = avaluar();
         if (c == '+') {
             return op1 + op2;
         } else if (c == '-') {
