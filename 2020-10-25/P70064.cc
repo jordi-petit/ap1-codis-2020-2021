@@ -16,7 +16,7 @@ void semiprimer(int n, bool& b, int& p, int& q)
 {
     for (p = 2; p * p <= n; ++p) {
         if (n % p == 0) {
-             // quan trobem un primer divisor p, aquest ha de ser primer i només cal mirar si n / p també és primer per què n sigui semiprimer perfecte
+             // el primer cop que trobem un divisor p, està garantint que ha de ser primer i només cal mirar si n / p també és primer per què n sigui semiprimer perfecte
              q = n / p;
              b = primer(q);
              return;
