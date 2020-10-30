@@ -14,9 +14,11 @@ bool primer(int n)
 
 void semiprimer(int n, bool& b, int& p, int& q)
 {
+    // Estratègia: busquem el divisor p més petit de n (entre 2 i √n).
+    // Si el trobem, és un nombre primer i per què n sigui semiprimer, cal que n / p sigui també primer.
+    // Altrament (si no hi ha divisor o n / p no és primer), aleshores n no és semiprimer.
     for (p = 2; p * p <= n; ++p) {
         if (n % p == 0) {
-             // el primer cop que trobem un divisor p, està garantint que ha de ser primer i només cal mirar si n / p també és primer per què n sigui semiprimer perfecte
              q = n / p;
              b = primer(q);
              return;
