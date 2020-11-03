@@ -45,11 +45,3 @@ bool es_primer_perfecte(int n)
     }
     return es_primer(n);
 }
-
-// amb un sol return i operacions lògiques
-
-bool es_primer_perfecte(int n)
-{
-    return (n <= 9 and es_primer(n))
-        or (es_primer_perfecte(suma_digits(n)) and es_primer(n));
-}
