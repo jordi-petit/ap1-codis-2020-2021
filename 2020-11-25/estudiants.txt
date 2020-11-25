@@ -1,0 +1,10 @@
+9
+marta 102 10
+joan 111 8
+anna 114 10
+joan 113 6
+laia 117 6
+pere 112 8
+anna 115 8
+marc 116 0
+laia 118 6
