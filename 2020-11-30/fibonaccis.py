@@ -36,7 +36,7 @@ def fibo4(n):
     M = [[1, 1],
          [1, 0]]
     Mn = eleva(M, n)
-    return Mn[0][1]
+    return Mn[1][0]
 
 
 def multiplica(A, B):
