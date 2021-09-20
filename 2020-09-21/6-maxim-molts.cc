@@ -9,6 +9,7 @@ using namespace std;
 int main()
 {
     int maxim;
+    cin >> maxim;
     int element;
     while (cin >> element) {
         if (element > maxim) {
